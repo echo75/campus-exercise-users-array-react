@@ -19,23 +19,23 @@ console.log("byAge ascending:", byAge ? true : false);
  */
 
   useEffect(() => {
-    console.log("All genders:", allGender ? "0" : "1 or 2");
+    console.log("All genders: ", allGender ? "0" : "1 or 2");
   }, [allGender]);
   
   useEffect(() => {
-    console.log("womenGender:", womenGender ? "0" : "1");
+    console.log("womenGender: ", womenGender ? "0" : "1");
   }, [womenGender]);
   
   useEffect(() => {
-    console.log("menGender:", menGender ? "0" : "2");
+    console.log("menGender: ", menGender ? "0" : "2");
   }, [menGender]);
 
   useEffect(() => {
-    console.log("byName ascending:", byName ? true : false);
+    console.log("byName ascending: ", byName ? true : false);
   }, [byName]);
 
   useEffect(() => {
-    console.log("byAge ascending:", byAge ? true : false);
+    console.log("byAge ascending: ", byAge ? true : false);
   }, [byAge]);
 
 
