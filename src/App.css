@@ -1,1 +1,22 @@
 /* Add your CSS here  */
+
+
+button {
+    background: #288312;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-right: 0.8em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 300ms;
+}
+
+
+button:hover {
+    background: #87c877;
+}
+
+button .buttonAll .active {
+    background: #5065dc;
+}
