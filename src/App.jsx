@@ -1,6 +1,7 @@
 import { useState } from "react";
 //import { users } from "./data/users.js";
 import { users } from "./data/usersComplete.js";
+import { ListMain } from './components/ListMain'
 
 import "./App.css";
 
@@ -88,12 +89,35 @@ function handleByAgeClick() {
         <button onClick={() => handleByAgeClick()} className="buttonAge">
           {byAge ? "Order by age - DESC" : "Order by age - ASC"}
         </button>
-          
-        <p> 
+
+       
+
+ <table style={{border: "1px solid black", width: "100%"}}>
+       <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+            <th>City</th>
+          </tr>
+        </thead> 
+        <tbody>
+    {/*        {usersList.map((user, index) => {
+       <ListMain key={index} user={user} />
+       })} */}
+       {usersList.map((user, index) => (
+          <ListMain key={index} user={user} />
+        ))}
+        </tbody>
+</table>
+
+        
+
+      {/*   <p> 
           User Liste: { usersList.map((user)=>{
             return <li>{ user.name.first } { user.name.last } { user.dob.age }</li>
           }) }
-        </p>
+        </p> */}
 
         </>;
 }
