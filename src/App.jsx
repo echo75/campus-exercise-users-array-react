@@ -69,7 +69,7 @@ function handleByAgeClick() {
   }
 
   return <>
-
+<div style={{display: "flex", justifyContent: "center", marginBottom: "1em"}}>
         <button onClick={() => handleAllClick()} className="buttonAll">
           {allGender ? "None" : "All Genders"}
         </button>
@@ -89,27 +89,25 @@ function handleByAgeClick() {
         <button onClick={() => handleByAgeClick()} className="buttonAge">
           {byAge ? "Order by age - DESC" : "Order by age - ASC"}
         </button>
-
+</div>
        
-
- <table style={{border: "1px solid black", width: "100%"}}>
+<div style={{display: "flex", justifyContent: "center", marginBottom: "1em"}}>
+ <table style={{width: "45em", border: "2px solid #dcdcdc" }}>
        <thead>
           <tr>
-            <th>Name</th>
+            <th>First and last name</th>
             <th>Age</th>
-            <th>Country</th>
-            <th>City</th>
+            <th>Gender</th>
+            <th>Picture</th>
           </tr>
         </thead> 
         <tbody>
-    {/*        {usersList.map((user, index) => {
-       <ListMain key={index} user={user} />
-       })} */}
-       {usersList.map((user, index) => (
+        {usersList.map((user, index) => (
           <ListMain key={index} user={user} />
         ))}
         </tbody>
 </table>
+</div>
 
         
 

@@ -6,13 +6,13 @@ export function ListMain({ user }) {
           <tr>
             <td>{user.name.first} {user.name.last}</td>
             <td>{user.dob.age}</td>
-            <td>{user.location.country}</td>
-            <td>{user.location.city}</td>
+            <td>{user.gender}</td>
+            <td><img src={ user.picture.thumbnail } /></td>
          </tr>        
   );
 }
 
-<table>
+{/* <table>
 <caption>
     Front-end web developer course 2021
 </caption>
@@ -51,4 +51,4 @@ export function ListMain({ user }) {
 <td>33</td>
 </tr>
 </tfoot>
-</table>
+</table> */}
